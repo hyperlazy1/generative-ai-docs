@@ -198,6 +198,19 @@
 
     // Click on the first tablink on load
     document.getElementsByClassName("tablink")[0].click();
+    document.addEventListener("DOMContentLoaded", function() {
+        // Get a reference to the button element
+        var searchButton = document.getElementById("searchHotel");
+
+        // Add a click event listener to the button
+        searchButton.addEventListener("click", function() {
+            // Replace the URL below with the destination page's URL
+            var destinationPageURL = "HomePageBooking.html";
+
+            // Redirect to the destination page
+            window.location.href = destinationPageURL;
+        });
+    });
 </script>
 
 
