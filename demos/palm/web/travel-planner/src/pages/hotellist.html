@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+.myLink {display: none}
+        .hotel-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+		  .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+        }
+		        label {
+            font-weight: bold;
+        }
+		        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #007BFF;
+        }h1 {
+            color: rgba(229, 0, 0, 0.9);
+			font-size: 26px;
+        }.hotel-card {
+            width: 800px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            background-color: rgba(229, 0, 0, 0.05); /* White background */
+            display: flex;
+            align-items: center; /* Align items vertically */
+        }
+        .hotel-photo {
+            width: 40%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .hotel-details {
+            flex-grow: 1;
+            padding-left: 10px;
+            color: #333333; /* Dark text color */
+        }
+        .hotel-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .hotel-price {
+            font-size: 16px;
+            color: #008080; /* Teal text color */
+        }
+        /* Remove default link styling */
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+		
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Navigation Bar -->
+<div class="w3-bar w3-white w3-border-bottom w3-xlarge">
+  <a href="#" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-map-marker w3-margin-right"></i>SABRE</b></a>
+  <a href="#" class="w3-bar-item w3-button w3-right w3-hover-red w3-text-grey"><i class="fa fa-search"></i></a>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px">
+  <img class="w3-image" src="https://d27s5h82rwvc4v.cloudfront.net/uploads/63e0ae31497191675669041.jpg" alt="London" width="1500" height="700">
+  <div class="w3-display-middle" style="width:65%">
+    <div class="w3-bar w3-black">
+      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Hotel');"><i class="fa fa-bed w3-margin-right"></i>Hotel</button>
+    </div>
+
+    <!-- Tabs -->
+
+    <div id="Hotel" class="w3-container w3-padding-16 myLink" style="background-color:white">
+      <h1>Hotel Aggregator</h1>
+      <div class="container">
+		<div class="hotel-list">
+		<a href="hotel1.html" class="hotel-card">
+		<img class="hotel-photo" src="https://lh3.googleusercontent.com/gps-proxy/AF-Tc0TvPM65QZPdkfbtBoG-sZFA0eml7ZCUz7HLw6SZ0sBhGgw9q5HprbgjForaz9kjQSGXyZoXnPW2zdznFY-Ci4paYKKCDoxyqmaUMRyvyGo2454_pSGEClOUXBSd9ZUrrDMpPzZwa7qz3po3tWok_LvqFL9C1YlR9hsltj8LKkCLf04j5Pa07masaA=w203-h131-k-no" alt="Hotel 1">
+		<div class="hotel-details">
+		<div class="hotel-name">The Leela Ambience Gurugram Hotel & Residences</div>
+		<div class="hotel-price">$300 per night</div>
+		<button type="submit">View Hotel</button>
+		</div>
+		</a>
+		</div>
+		<div class="hotel-list">
+		<a href="hotel1.html" class="hotel-card">
+		<img class="hotel-photo" src="https://lh3.googleusercontent.com/gps-proxy/AF-Tc0SLsP--n7_zYVVZ1StW3IR1-ORr_BY0e-VZSBJ9-yZEr4_QWHIqnn4pk7c7zemhl8XjT3rfP4W5G-dqhK6D2sj8j_5cYB8XiUe_FrxFioFfak9CIp4gqX8GHCuZ6Tcr8t9SBsPApZ9s1ErqukAymfcXnkDBALKaRK26-Cqdy6V9sW7yW4aoaj3I=w203-h179-k-no" alt="Hotel 1">
+		<div class="hotel-details">
+		<div class="hotel-name">Four Points By Sheraton New Delhi</div>
+		<div class="hotel-price">$250 per night</div>
+		<button type="submit">View Hotel</button>
+		</div>
+		</a>
+		</div>
+		<div class="hotel-list">
+		<a href="hotel1.html" class="hotel-card">
+		<img class="hotel-photo" src="https://lh5.googleusercontent.com/p/AF1QipO_IHeaFbo_GfJQIu0o6KG7dq4BpCucHSx1Yyf4=w203-h220-k-no" alt="Hotel 1">
+		<div class="hotel-details">
+		<div class="hotel-name">Roseate House</div>
+		<div class="hotel-price">$240 per night</div>
+		<button type="submit">View Hotel</button>
+		</div>
+		</a>
+		</div>
+</header>
+
+  <!-- Newsletter -->
+  <div class="w3-container">
+    <div class="w3-panel w3-padding-16 w3-black w3-card">
+      <h2>Get the best offers first!</h2>
+      <p>Join our newsletter.</p>
+      <label>E-mail</label>
+      <input class="w3-input w3-border" type="text" placeholder="Your Email address">
+      <button type="button" class="w3-button w3-red w3-margin-top">Subscribe</button>
+    </div>
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container">
+    <h2>Contact</h2>
+    <p>Let us book your next trip!</p>
+    <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+    <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+    <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p><button class="w3-button w3-black w3-padding-large" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-center w3-opacity w3-margin-bottom">
+  <h5>Find Us On</h5>
+  <div class="w3-xlarge w3-padding-16">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</footer>
+
+<script>
+// Tabs
+function openLink(evt, linkName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("myLink");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(linkName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+
+// Click on the first tablink on load
+document.getElementsByClassName("tablink")[0].click();
+</script>
+
+</body>
+</html>
