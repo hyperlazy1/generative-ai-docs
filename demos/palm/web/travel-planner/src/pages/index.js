@@ -255,6 +255,7 @@ export default function Index() {
     if (!placeDetails) return;
     setPlaceDetails(placeDetails);
     setOpenPlaceCard(true);
+    window.open("hotelhome.html", "_blank");
   };
 
   const handleOnSendMsg = async msg => {
